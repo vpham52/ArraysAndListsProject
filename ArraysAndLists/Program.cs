@@ -25,22 +25,39 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
+
+
             //foreach loop
-            foreach (var num in numbers)
-            {
-                if (num % 2 == 0)
-                {
-                    evensList.Add(num);
+            //foreach (var num in numbers)
+            //{
+            //    if (num % 2 == 0)
+            //    {
+            //        evensList.Add(num);
 
-                }
-                else
-                {
-                    oddsList.Add(num);
-                }
+            //    }
+            //    else
+            //    {
+            //        oddsList.Add(num);
+            //    }
 
 
+            //}
+
+
+            for (var i = 0; i < numbers.Length; i++)
+            {               
+                
+                    if (numbers[i] % 2 == 0)
+                    {
+                        evensList.Add(numbers[i]);
+
+                    }
+                    else
+                    {
+                        oddsList.Add(numbers[i]);
+                    }
+                
             }
-
 
 
             /* Now using foreach or for loops,
@@ -53,6 +70,8 @@ namespace ArraysAndLists
                 Console.WriteLine($"{item} is an even number.");
 
             }
+
+            Console.WriteLine();
 
             foreach (var item in oddsList)
             {
